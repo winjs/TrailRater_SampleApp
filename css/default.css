@@ -1,0 +1,257 @@
+﻿body{
+    height: 100%;
+}
+.content,
+#app {
+    height: 100%;
+}
+
+    /* SplitView pane content style*/
+    #app .header {
+        white-space: nowrap;
+    }
+
+    #app .title {
+        font-size: 25px;
+        left: 50px;
+        margin-top: 6px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #app .nav-commands {
+        margin-top: 20px;
+    }
+
+.win-splitviewcommand-button {
+    background-color: transparent;
+}
+
+#app .win-splitview-pane-hidden .win-splitviewcommand-button {
+    width: 46px;
+}
+
+#app .win-splitview-pane-hidden .win-splitviewcommand-label {
+    /* Workaround: Make sure pane doesn't scroll if ContentDialog restores focus to
+       NavBarCommand's label
+    */
+    visibility: hidden;
+}
+
+/*SplitView content style*/
+
+.not-small {
+    display: none;
+}
+
+#app .win-splitview-content {
+    background-color: rgb(112,112,112);
+}
+
+#app .contenttext {
+    margin-left: 20px;
+    margin-top: 6px;
+    height: 100%;
+}
+
+    #app .contenttext h1 {
+        font-family: Broadway;
+        font-size: 40px;
+    }
+
+/*SplitView pane show button style*/
+button.win-splitview-button {
+    float: left;
+    box-sizing: border-box;
+    height: 48px;
+    width: 48px;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    border: 1px dotted transparent;
+    margin: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+html.win-hoverable button.win-splitview-button:hover {
+    background-color: rgba(255,255,255, 0.1);
+}
+
+button.win-splitview-button.win-splitview-button:active,
+button.win-splitview-button.win-splitview-button:hover:active {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+button.win-splitview-button.win-keyboard:focus {
+    border-color: rgb(255, 255, 255);
+}
+
+button.win-splitview-button:after {
+    font-size: 24px;
+    font-family: 'Segoe MDL2 Assets', 'Symbols';
+    content: "\E700";
+}
+
+#app .description table tr td {
+    padding-left: 20px;
+}
+
+/*Flipview*/
+
+.flipView {
+    width: 100%;
+    padding-top: 20px;
+    max-width: 480px;
+    height: 270px;
+   
+}
+
+.flipViewContent {
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
+}
+
+/*Styles used in the Item Template*/
+.avgRating{
+    color: rgba(216, 172, 10, 1.0);
+}
+.overlaidItemTemplate {
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
+}
+
+    .overlaidItemTemplate img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlaidItemTemplate .overlay {
+        position: absolute;
+        background-color: rgba(0,0,0,0.65);
+        height: 40px;
+        padding: 20px 15px;
+        overflow: hidden;
+        width:100%;
+        bottom:0;
+    }
+
+        .overlaidItemTemplate .overlay .ItemTitle {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+/*Ratings*/
+
+
+.description h2 {
+    padding-left: 20px;
+    padding-top: 20px; 
+}
+
+
+
+.description p {
+    padding-left: 40px;
+    
+}
+
+
+
+#expandedItem
+{
+    background: #00B6FF;
+}
+
+/*Home vs trail controls*/
+
+.show-trail .home-ui {
+    display: none;
+}
+
+.show-home .trail-ui {
+    display: none;
+}
+
+.home-ui {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    overflow: auto;
+    
+}
+
+/*Listview*/
+#hometitle{
+    font-size: 400px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+.myListItem
+{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+}
+.myListImage 
+{
+    width: 300px;
+    height: 200px;
+}
+
+
+        
+.myListDetail
+{
+    margin: 5px;
+    text-align: left;
+}
+
+       
+.listLayoutTopHeaderTemplateRoot, .gridLayoutLeftHeaderTemplateRoot {
+    font-size: larger;
+    margin-left: 16px;
+}
+    
+/* CSS applied to the ListViews in this sample */
+#listView
+{
+    height: 100%;
+    /*still may be problem with height...overwrote it here*/
+}
+
+.mainList{
+    width: 75%;
+    height: calc(100% - 68px);
+    display: inline-block;
+
+    float: left;
+}
+ 
+.recommendedList{
+    width: 24%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.myListItem
+{
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.myListImage 
+{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+}
+
+
